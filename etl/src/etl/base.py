@@ -16,13 +16,3 @@ class BaseCreate(object):
     @abstractmethod
     def perform(self):
         pass
-
-
-class BaseUpdate(object):
-    """Base class for entry updation. It should be used when updating
-     existing data as well."""
-    __metaclass__ = ABCMeta
-
-    @abstractmethod
-    def perform_update(self):
-        pass

@@ -24,9 +24,9 @@ class Command(BaseCommand):
         del cls
 
     def handle(self, *args, **options):
-        logger.info('START Renewbuy ETL')
-        logger.info('Transaction Table Starts*******************************')
-        transaction = Transaction()
+        logger.info('STARTING ETL')
+        logger.info('Insertion in Table Starts*******************************')
+        transaction = FetchData()
         self.run(transaction)
-        logger.info('Transaction Table Ends*********************************')
-        logger.info('END Renewbuy ETL')
+        logger.info('Insertion in Table Ends*********************************')
+        logger.info('ETL')
