@@ -1,1 +1,1 @@
-# Simple Django based ETL project.
+# Django based simple ETL project.
